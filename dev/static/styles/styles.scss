@@ -8,6 +8,7 @@
 html {
   font-family: 'Open Sans', Arial, serif;
   font-size: 16px;
+  color: white;
   height: 100%;
 }
 
@@ -16,6 +17,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background: $black;
 }
 
 *,
@@ -65,12 +67,6 @@ button { outline: none; }
 }
 
 .content { flex: 1 0 auto; }
-
-.container {
-  margin: 0 auto;
-  max-width: $content;
-  width: 100%;
-}
 
 //Модули
 @import "modules/modules";

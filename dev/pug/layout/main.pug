@@ -12,13 +12,12 @@ html(lang="ru-RU")
 		meta(name="viewport" content="width=device-width,initial-scale=1")
 		meta(name="keywords" content="")
 		link(rel="stylesheet" type='text/css' href="static/css/styles.css")
-	body
+	body(class= page_class + '_page')
 		.wrapper
 			include ../modules/header/header
 			.content
 				block content
 			include ../modules/footer/footer
-		//script(src="static/js/vendor/jquery-3.3.1.min.js")
-		//script(src="static/js/vendor/libs.js")
-		script(src="static/js/main.js")
-		block script
+		script(src="/static/js/jquery-3.3.1.min.js")
+		script(src="/static/js/libs.js")
+		script(src="/static/js/main.js")
