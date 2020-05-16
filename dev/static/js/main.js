@@ -1,5 +1,7 @@
 $(function() {
 
+    $('.top_line_space').css('height', $('.top_line').outerHeight());
+
     $('.butter-button.hidden_menu, .butter-button.visible_menu').on('click', function() {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
@@ -14,5 +16,15 @@ $(function() {
             }, 500)
         }
     });
+
+
+    var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+    });
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress( function() {
+        $grid.masonry('layout');
+    });
+
 
 });

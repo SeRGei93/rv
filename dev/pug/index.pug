@@ -5,4 +5,118 @@ block variables
 	-var page_class = 'main'
 
 block content
-	p 123
+	.presentation_block
+		.container
+			.row
+				.col-md-6
+					.presentation_block_hero
+						img(src='static/images/common/home-hero-768x1024.jpg' alt='')
+				.col-md-6.d-flex.align-items-center
+					.presentation_block_text
+						h2 Videos that move the world forward...
+				.col-md-12
+					.cta_buttons
+						a.btn.btn-white.btn_phone(href='tel:2045568')
+							span.icon-phone-alt
+							= 'Give us a Call'
+						a.btn.btn-accent.btn_mail(href='#')
+							span.icon-telegramm
+							= 'Send us a Note'
+
+	.about_block.p80
+		.container
+			.about_block_content
+				h1.about_block_content--small_text San Francisco Bay Area Video Production Company
+				h2.about_block_content--big_text We create videos that motivate behavior. Videos that tell pioneering stories - from emerging tech to the great outdoors.
+				.about_block_content--text
+					p Through new ways of reaching your audience, and being an integral part of the process all the way from concept to consumer, we help create a different future. We’re a nimble San Francisco Bay Area video production company helping brands and organizations push the world forward.
+					p What’s your way forward?
+
+
+	.container
+		.portfolio_masonry.mb80
+			.grid
+				+grid-item('static/images/common/intel.png', 'static/images/common/toyota-ca-screenshot.jpg', '#', 'grid-item--height2')
+				+grid-item('static/images/common/intel.png', 'static/images/common/cisco.jpg', '#', 'grid-item--width2')
+				+grid-item('static/images/common/intel.png', 'static/images/common/Hipster-Hooligans-1.jpg', '#', '')
+				+grid-item('static/images/common/intel.png', 'static/images/common/Trov.jpg', '#', '')
+				+grid-item('static/images/common/intel.png', 'static/images/common/VSCO-Homepage.jpg', '#', 'grid-item--width2')
+				+grid-item('static/images/common/intel.png', 'static/images/common/Ori-2.jpg', '#', '')
+
+	.clients.mb80
+		.container
+			.row
+				.col-lg-3.col-md-4.col-6
+					.clients_item
+						img(src='static/images/common/intel.png' alt='')
+				.col-lg-3.col-md-4.col-6
+					.clients_item
+						img(src='static/images/common/intel.png' alt='')
+				.col-lg-3.col-md-4.col-6
+					.clients_item
+						img(src='static/images/common/intel.png' alt='')
+				.col-lg-3.col-md-4.col-6
+					.clients_item
+						img(src='static/images/common/intel.png' alt='')
+				.col-lg-3.col-md-4.col-6
+					.clients_item
+						img(src='static/images/common/intel.png' alt='')
+				.col-lg-3.col-md-4.col-6
+					.clients_item
+						img(src='static/images/common/intel.png' alt='')
+				.col-lg-3.col-md-4.col-6
+					.clients_item
+						img(src='static/images/common/intel.png' alt='')
+				.col-lg-3.col-md-4.col-6
+					.clients_item
+						img(src='static/images/common/intel.png' alt='')
+				.col-lg-3.col-md-4.col-6
+					.clients_item
+						img(src='static/images/common/intel.png' alt='')
+				.col-lg-3.col-md-4.col-6
+					.clients_item
+						img(src='static/images/common/intel.png' alt='')
+				.col-lg-3.col-md-4.col-6
+					.clients_item
+						img(src='static/images/common/intel.png' alt='')
+				.col-lg-3.col-md-4.col-6
+					.clients_item
+						img(src='static/images/common/intel.png' alt='')
+				.col-md-12.d-flex.justify-content-center
+					a.btn.btn-accent.scale-effect(href='#')
+						span Get a Free Quote
+
+	.services_block.mt80.p50
+		.container
+			.row
+				.col-md-4
+					.services_item
+						.services_item-icon
+							img(src='static/images/content/product_videos-150x150.png' alt='')
+						.services_item-title Product Videos
+						.services_item-text
+							p Tell a story as compelling and world-changing as your product or service.
+				.col-md-4
+					.services_item
+						.services_item-icon
+							img(src='static/images/content/brand_videos-150x150.png' alt='')
+						.services_item-title Brand Videos
+						.services_item-text
+							p Share your journey with the world through a compelling brand film that captures your unique vision.
+				.col-md-4
+					.services_item
+						.services_item-icon
+							img(src='static/images/content/agency_partnerships_video-production-150x150.png' alt='')
+						.services_item-title Agency Partnerships
+						.services_item-text
+							p Wherever your agency is going, bring experienced video partners along with you.
+
+
+
+
+
+
+
+
+
+

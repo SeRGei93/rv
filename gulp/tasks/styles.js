@@ -12,18 +12,14 @@ const gulpif = require('gulp-if');
 module.exports = function styles() {
   return gulp.src('dev/static/styles/styles.scss')
     .pipe(plumber())
-    .pipe(gulpif(!argv.prod, sourcemaps.init()))
+    // .pipe(gulpif(!argv.prod, sourcemaps.init()))
     .pipe(scss())
     .pipe(autoprefixer({
       overrideBrowserslist:  [ "last 4 version" ],
       cascade: false
     }))
-    .pipe(gulpif(argv.prod, cleanCSS({
-      debug: true,
-      compatibility: '*'
-    }, details => {
-      console.log(`${details.name}: Original size:${details.stats.originalSize} - Minified size: ${details.stats.minifiedSize}`)
-    })))
-    .pipe(gulpif(!argv.prod, sourcemaps.write()))
+      .pipe(cleanCSS({compatibility: 'ie10', level: {1: {specialComments: 0}}}))
+    // .pipe(cleanCSS())
+    // .pipe(gulpif(!argv.prod, sourcemaps.write()))
     .pipe(gulp.dest('dist/static/css'))
 };

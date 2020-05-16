@@ -7,4 +7,19 @@ mixin icon(name,mod)
 			use(xlink:href="static/images/sprite/symbol/sprite.svg#" + name)
 mixin menu_item(name,link)
 	li
-		a(src=link class='top_menu--item') #{name}
+		a(href=link class='top_menu--item') #{name}
+mixin grid-item(logo,img,link,classes)
+	if(classes)
+		div(class='grid-item '+ classes)
+			.portfolio_content
+				.portfolio_content_bg(style="background-image: url('" + img + "')")
+				a(href=link)
+					.portfolio_content_logo
+						img(src=logo)
+	else
+		div(class='grid-item')
+			.portfolio_content
+				.portfolio_content_bg(style="background-image: url('" + img + "')")
+				a(href=link)
+					.portfolio_content_logo
+						img(src=logo)

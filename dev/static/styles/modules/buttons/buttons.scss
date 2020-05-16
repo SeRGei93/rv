@@ -1,0 +1,38 @@
+.btn{
+  display: inline-block;
+  line-height: 1;
+  background-color: #818a91;
+  color: #000;
+  fill: #fff;
+  text-align: center;
+  transition: all .3s;
+  box-shadow: none;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 40px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  @include screen(767px){
+    font-size: 14px;
+    padding: 15px 25px;
+  }
+  @include screen(340px){
+    padding: 15px 10px;
+  }
+  span{
+    display: inline-block;
+  }
+  &.btn-accent{
+    background-color: $accent;
+  }
+  &.btn-white{
+    background-color: #fff;
+    color: black;
+  }
+  &.scale-effect{
+    &:hover, &:focus{
+      transform: scale(1.1);
+    }
+  }
+}

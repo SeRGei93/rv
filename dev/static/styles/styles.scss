@@ -65,8 +65,59 @@ button { outline: none; }
   flex-direction: column;
   height: 100%;
 }
-
+.clb{
+  &:after{
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
 .content { flex: 1 0 auto; }
 
+.p50{
+  padding: 50px 0;
+  @include screen(767px){
+    padding: 25px 0;
+  }
+}
+.p80{
+  padding: 80px 0;
+  @include screen(767px){
+    padding: 40px 0;
+  }
+}
+.mb50{
+  margin-bottom: 50px;
+  @include screen(767px){
+    margin-bottom: 25px;
+  }
+}
+.mt50{
+  margin-top: 50px;
+  @include screen(767px){
+    margin-top: 25px;
+  }
+}
+.m50{
+  margin: 50px 0;
+  @include screen(767px){
+    margin: 25px 0;
+  }
+}
+.m80{
+  margin: 80px 0;
+  @include screen(767px){
+    margin: 40px 0;
+  }
+}
+.mb80{
+  margin-bottom: 80px;
+  @include screen(767px){
+    margin-bottom: 40px;
+  }
+}
+p{
+  margin-bottom: 10px;
+}
 //Модули
 @import "modules/modules";

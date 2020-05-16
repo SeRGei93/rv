@@ -1,1 +1,56 @@
-footer { flex: 0 0 auto; }
+footer {
+  margin-top: 20px;
+  padding: 30px 0;
+  flex: 0 0 auto;
+}
+
+.footer_text{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  max-width: 220px;
+}
+.footer_title{
+  font-size: 24px;
+  text-transform: lowercase;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+.instagram_module{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  &-item{
+    padding: 5px;
+    flex-basis: calc(100% / 3);
+  }
+}
+.form_subscribe{
+  display: block;
+  margin-top: 20px;
+  position: relative;
+  input{
+    outline: none;
+    font-size: 14px;
+    border: none;
+    font-style: italic;
+    padding: 0 15px;
+    line-height: 38px;
+    color: #242424;
+  }
+  button{
+    height: 40px;
+    position: absolute;
+    top: -1px;
+    border: 1px solid #242424;
+    background: white;
+    line-height: 38px;
+    width: 40px;
+    color: #242424;
+    cursor: pointer;
+    &:before{
+      content: '>';
+    }
+  }
+}

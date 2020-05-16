@@ -9,11 +9,13 @@ const gulpif = require('gulp-if');
 
 module.exports = function script() {
   return gulp.src('dev/static/js/*.js')
-    .pipe(eslint())
-    .pipe(eslint.format())
+    // .pipe(eslint())
+    // .pipe(eslint.format())
     .pipe(babel({
       presets: ['@babel/env']
     }))
-    .pipe(gulpif(argv.prod, uglify()))
+    .pipe(uglify({
+        compress: true
+    }))
     .pipe(gulp.dest('dist/static/js/'));
 };
