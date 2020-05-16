@@ -1,0 +1,96 @@
+extends layout/main
+
+block variables
+	-var title = 'Портфолио детальная'
+	-var page_class = 'portfolio-detail'
+
+block content
+	.portfolio_case
+		.portfolio_case_production
+			.container
+				.row
+					.col-lg-7.col-md-12
+						.portfolio_case_production--small_text
+							p Case Study
+						.portfolio_case_production--big_text
+							h1 Cisco Meraki Hulu Campaign
+						.portfolio_case_production--artist
+							ul
+								li
+									strong Agency:
+									= ' BX Films'
+								li
+									strong Executive Producer:
+									= ' Ben Sanders'
+								li
+									strong Producer:
+									= ' Beau Walchek'
+								li
+									strong Art Director:
+									= ' Myles Neith'
+								li
+									strong DP:
+									= ' Phil Briggs'
+								li
+									strong Gaffer:
+									= ' Jason Predock'
+
+					.col-lg-5.col-md-12
+						.portfolio_case_production--description
+							p BX Films and Cisco Meraki inject fun, humor into IT challenges.
+							p BX Films and Cisco Meraki teamed up to make advanced IT security and setup look fun. That’s right. Fun. Because how the hell else do you grab people’s attention about new IT solutions?
+							p In just three short spots, they cover IT office fails, an overzealous tech consultant (we all know the type), and a high-stakes office competition. Plus, one office worker gets a sunburn now that the IT team has so much more time on their hands. In their own way, they all showcase how Cisco Meraki makes IT work simple.
+
+		.portfolio_case_content
+			.container
+				.portfolio_case_content_video.mb80
+					.row
+						.col-12
+							+iframe-lozad("https://www.youtube.com/embed/avicCHnhcj0")
+						.col-lg-6.col-md-12
+							+iframe-lozad("https://www.youtube.com/embed/avicCHnhcj0", "iframe_50")
+						.col-lg-6.col-md-12
+							+iframe-lozad("https://www.youtube.com/embed/avicCHnhcj0", "iframe_50")
+
+				.title_separator
+					.title_separator_title
+						span За кулисами
+					.title_separator_separator
+						span
+				.clb
+				.portfolio_case_content_photo
+					.row
+						.col-lg-4.col-sm-6
+							+img-lozad('static/images/content/Toyota_BTS_01.jpg', 'portfolio_photo')
+						.col-lg-4.col-sm-6
+							+img-lozad('static/images/content/Toyota_BTS_02.jpg', 'portfolio_photo')
+						.col-lg-4.col-sm-6
+							+img-lozad('static/images/content/Toyota_BTS_03.jpg', 'portfolio_photo')
+						.col-lg-4.col-sm-6
+							+img-lozad('static/images/content/Toyota_BTS_04.jpg', 'portfolio_photo')
+						.col-lg-4.col-sm-6
+							+img-lozad('static/images/content/Toyota_BTS_05.jpg', 'portfolio_photo')
+						.col-lg-4.col-sm-6
+							+img-lozad('static/images/content/Toyota_BTS_06.jpg', 'portfolio_photo')
+						.col-md-12.d-flex.justify-content-center.m50
+							a.btn.btn-accent.scale-effect(href='#')
+								span Получить консультацию
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

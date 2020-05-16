@@ -37,6 +37,9 @@ header { flex: 0 0 auto; }
       transition: padding 0.3s ease;
       &:not(:last-of-type){
         margin-right: 30px;
+        @include screen(1199px){
+          margin-right: 20px;
+        }
       }
       a{
         transition: 0.3s;

@@ -1,0 +1,73 @@
+extends layout/main
+
+block variables
+    -var title = 'О нас'
+    -var page_class = 'about'
+
+block content
+    .container
+        .row
+            .col-12
+                h1.big_title.h1 Видеосъемка в Беларуси для тех, кто создает будущее.
+            .col-12
+                .about_page_block
+                    .row
+                        .col-lg-6.col-md-12
+                            .about_page_block_gallery
+                                .about_page_block_gallery--item
+                                    +img-lozad('static/images/content/about-1.jpg')
+                                .about_page_block_gallery--item
+                                    +img-lozad('static/images/content/about-2.jpg')
+                                .about_page_block_gallery--item
+                                    +img-lozad('static/images/content/about-3.jpg')
+                                .about_page_block_gallery--item
+                                    +img-lozad('static/images/content/about-4.jpg')
+
+                        .col-lg-6.col-md-12
+                            .about_page_block_text
+                                .about_page_block_text--title Here's the deal
+                                div.d-flex.flex-row
+                                    .about_page_block_text--divider
+                                        span
+                                    .about_page_block_text--content
+                                        p We exist to tell the stories of the pioneer, the adventurer, the person with a calling deep inside. We’re here for the bleeding-edgers, the ones who see opportunity while the world’s still looking in the rear-view mirror.
+                                        p Because we’re those pioneers, too. We know what it means to come back down the mountain with a story to tell. To have gone where few others have, and return with something extraordinary, that the world needs to experience.
+                                        p We’re here to be the way forward.
+
+
+                .about_page_block.reverse
+                    .row
+                        .col-lg-6.col-md-12
+                            .about_page_block_gallery
+                                .about_page_block_gallery--item
+                                    +img-lozad('static/images/content/about-1.jpg')
+                                .about_page_block_gallery--item
+                                    +img-lozad('static/images/content/about-2.jpg')
+                                .about_page_block_gallery--item
+                                    +img-lozad('static/images/content/about-3.jpg')
+                                .about_page_block_gallery--item
+                                    +img-lozad('static/images/content/about-4.jpg')
+
+                        .col-lg-6.col-md-12
+                            .about_page_block_text
+                                .about_page_block_text--title Concept to Consumer
+                                div.d-flex.flex-row
+                                    .about_page_block_text--divider
+                                        span
+                                    .about_page_block_text--content
+                                        p We do whatever it takes to share your story.
+                                        p That means doing so much more than just filming and editing. We’re continuously learning about psychology and how to motivate behavior. We’re exploring digital strategies that can get you triple digit returns on your marketing spend. We’re finding new ways of shooting and editing to stay at the forefront of the best video techniques and practices in our industry.
+                                        p Our goal is to help spread your story as far and wide as possible by being involved in the entire process.
+
+
+
+
+
+
+
+
+
+
+
+
+

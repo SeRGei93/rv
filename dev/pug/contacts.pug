@@ -1,0 +1,52 @@
+extends layout/main
+
+block variables
+    -var title = 'Контакты'
+    -var page_class = 'contacts'
+
+block content
+    .container
+        .row
+            .col-12
+                h1.big_title.h1 Хотите продвинуть свой бренд вперед?
+                    br
+                    = 'Мы не можем ждать.'
+            .col-12
+                .contact_block
+                    .row
+                        .col-lg-6.col-md-12
+                            .contact_block_photo
+                                .contact_block_photo--text
+                                    p San Francisco Video Production Company
+                                .contact_block_photo--img(style='background-image: url(static/images/content/contact-top.jpg)')
+
+
+                        .col-lg-6.col-md-12
+                            .contact_block_text
+                                h2.contact_block_text--title Наши контакты
+                                .contact_block_text--adress
+                                    .contact_block_text--adress_item
+                                        span.icon-map-marker-alt-solid
+                                        .contact_block_text--adress_item_text
+                                            strong Address:
+                                            = ' 1667 Botelho Drive Suite 190 Walnut Creek, CA 94596'
+                                    .contact_block_text--adress_item
+                                        span.icon-phone-alt
+                                        .contact_block_text--adress_item_text
+                                            strong Phone:
+                                            = ' 415.355.4605'
+                                    .contact_block_text--adress_item
+                                        span.icon-envelope-regular
+                                        .contact_block_text--adress_item_text
+                                            strong Mail:
+                                            = ' info@bxfilms.tv'
+
+
+
+
+
+
+
+
+
+

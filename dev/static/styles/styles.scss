@@ -73,7 +73,10 @@ button { outline: none; }
   }
 }
 .content { flex: 1 0 auto; }
-
+.no-padding{
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
 .p50{
   padding: 50px 0;
   @include screen(767px){
@@ -119,5 +122,87 @@ button { outline: none; }
 p{
   margin-bottom: 10px;
 }
+.iframe_wrap{
+  padding: 15px 0;
+  iframe{
+    display: block;
+    width: 100%;
+    min-height: 550px;
+    @include screen(1199px){
+      min-height: 520px;
+    }
+    &.iframe_50{
+      min-height: 300px;
+      @include screen(1199px){
+        min-height: 255px;
+      }
+    }
+    @include screen(991px){
+      min-height: 300px!important;
+    }
+    @include screen(767px){
+      min-height: 210px!important;
+    }
+    @include screen(340px){
+      min-height: 165px!important;
+    }
+  }
+  @include screen(767px){
+    padding: 10px 0;
+  }
+}
+.big_title{
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  color: white;
+  padding: 50px 0;
+  margin-bottom: 50px;
+  &.h1{
+    padding-top: 35px!important;
+  }
+  @include screen(991px){
+    font-size: 34px;
+    margin-bottom: 20px;
+    padding: 30px 0;
+  }
+  @include screen(767px){
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    padding: 20px 0;
+  }
+}
+.title_separator{
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  &_title{
+    color: #9c9c9c;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+  &_separator{
+    margin-left: 6px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    flex-grow: 1;
+    span{
+      line-height: 0;
+      font-size: 0;
+      border-top: 1px solid #ddd;
+      display: block;
+    }
+  }
+}
+
+
+
 //Модули
 @import "modules/modules";

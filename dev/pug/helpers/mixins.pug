@@ -5,21 +5,50 @@ mixin icon(name,mod)
 	else
 		svg(class="svg-sprite-icon icon-" + name)
 			use(xlink:href="static/images/sprite/symbol/sprite.svg#" + name)
+
 mixin menu_item(name,link)
 	li
 		a(href=link class='top_menu--item') #{name}
+
+mixin portfolio_content(logo,img,link)
+	.portfolio_content
+		.portfolio_content_bg(style="background-image: url('" + img + "')")
+		a(href=link)
+			.portfolio_content_logo
+				img(src=logo)
+
 mixin grid-item(logo,img,link,classes)
 	if(classes)
 		div(class='grid-item '+ classes)
-			.portfolio_content
-				.portfolio_content_bg(style="background-image: url('" + img + "')")
-				a(href=link)
-					.portfolio_content_logo
-						img(src=logo)
+			+portfolio_content(logo,img,link)
 	else
 		div(class='grid-item')
-			.portfolio_content
-				.portfolio_content_bg(style="background-image: url('" + img + "')")
-				a(href=link)
-					.portfolio_content_logo
-						img(src=logo)
+			+portfolio_content(logo,img,link)
+
+mixin img-lozad(img, classes)
+	if(classes)
+		img(data-src=img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt='' class="lozad " + classes)
+		noscript
+			img(src=img class=classes alt='')
+	else
+		img(data-src=img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt='' class="lozad")
+		noscript
+			img(src=img alt='')
+
+mixin iframe-lozad(src, classes)
+	.iframe_wrap
+		if(classes)
+			iframe(data-src=src class="lozad " + classes frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+			noscript
+				iframe(data=src class=classes frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+		else
+			iframe(data-src=src class="lozad" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+			noscript
+				iframe(src=src  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+mixin services_item(icon, title, descr)
+	.services_item
+		.services_item-icon
+			img(src=icon alt='')
+		.services_item-title=title
+		.services_item-text
+			p=descr

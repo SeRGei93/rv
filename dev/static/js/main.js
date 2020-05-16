@@ -17,6 +17,15 @@ $(function() {
         }
     });
 
+    lozad('.lozad', {
+        load: function(el) {
+            el.src = el.dataset.src;
+            el.onload = function() {
+                el.classList.add('fade')
+            }
+        }
+    }).observe();
+
 
     var $grid = $('.grid').masonry({
         itemSelector: '.grid-item',

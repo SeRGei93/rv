@@ -1,0 +1,112 @@
+.portfolio_content{
+  min-height: 285px;
+  overflow: hidden;
+  position: relative;
+  @include box(100%);
+  @include screen(991px){
+    min-height: 240px;
+  }
+  @include screen(767px){
+    min-height: 200px;
+  }
+  &_bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @include cover-background;
+  }
+  a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .portfolio_content_logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background-color: rgba(204,55,116,.8);
+    transition: opacity .3s ease;
+    img{
+      max-width: 150px;
+    }
+  }
+  &:hover{
+    .portfolio_content_logo{
+      opacity: 1;
+    }
+  }
+}
+
+.portfolio_case_production{
+  transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
+  padding: 90px 0 120px 0;
+  position: relative;
+  background-image: url('../images/common/work-background-pattern01.svg');
+  background-position: 416px 412px;
+  background-repeat: no-repeat;
+  background-size: 63% auto;
+  @include screen(991px){
+    padding: 60px 0 90px 0;
+    background-position: 90px 400px;
+    background-size: 90% auto;
+  }
+  @include screen(767px){
+    padding: 30px 0 90px 0;
+  }
+  &--small_text{
+    color: #9c9c9c;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+  }
+  &--big_text{
+    margin-bottom: 40px;
+    h1{
+      font-weight: 600;
+      font-size: 54px;
+      line-height: 1;
+      @include screen(767px){
+        font-size: 32px;
+      }
+    }
+    @include screen(767px){
+      margin-bottom: 20px;
+    }
+  }
+  &--artist{
+    li{
+      color: #bcbcbc;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 2.4em;
+      letter-spacing: .1px;
+      display: block;
+      strong{
+        font-weight: 600;
+      }
+    }
+  }
+  &--description{
+    padding: 40px 0 0 0;
+    color: #ededed;
+    line-height: 1.8em;
+    p{
+      margin-bottom: 1em;
+    }
+  }
+}
+.portfolio_case_content{
+  margin-top: -60px;
+  margin-bottom: 0;
+}
+.portfolio_photo{
+  margin-bottom: 30px;
+}

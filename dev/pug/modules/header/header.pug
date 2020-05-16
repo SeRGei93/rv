@@ -4,16 +4,17 @@ header
             .row
                 .col-4
                     .logo
-                        a(href='#')
+                        a(href='/')
                             img(src='static/images/common/bxfilms_white.png' alt='')
                 .col-8.d-flex.justify-content-end
                     nav.top_menu
                         ul
                             +menu_item('Главная', '/')
-                            +menu_item('Услуги', '/')
-                            +menu_item('О нас', '/')
-                            +menu_item('Мы ищем тебя', '/')
-                            +menu_item('Контакты', '/')
+                            +menu_item('Услуги', 'services.html')
+                            +menu_item('Портфолио', 'portfolio.html')
+                            +menu_item('О нас', 'about.html')
+                            //+menu_item('Мы ищем тебя', '/')
+                            +menu_item('Контакты', 'contacts.html')
                     div.butter-button.visible_menu
                         div
     .top_line_space

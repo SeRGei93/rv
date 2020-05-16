@@ -13,24 +13,24 @@ block content
 						img(src='static/images/common/home-hero-768x1024.jpg' alt='')
 				.col-md-6.d-flex.align-items-center
 					.presentation_block_text
-						h2 Videos that move the world forward...
+						h2 Видео, которые двигают мир вперед...
 				.col-md-12
 					.cta_buttons
 						a.btn.btn-white.btn_phone(href='tel:2045568')
 							span.icon-phone-alt
-							= 'Give us a Call'
+							= 'Позвонить'
 						a.btn.btn-accent.btn_mail(href='#')
 							span.icon-telegramm
-							= 'Send us a Note'
+							= 'Отправить заявку'
 
 	.about_block.p80
 		.container
 			.about_block_content
-				h1.about_block_content--small_text San Francisco Bay Area Video Production Company
-				h2.about_block_content--big_text We create videos that motivate behavior. Videos that tell pioneering stories - from emerging tech to the great outdoors.
+				h1.about_block_content--small_text Сан-Франциско, Бэй Район, Видео Продюсерская Компания
+				h2.about_block_content--big_text Мы создаем видео, которые мотивируют поведение. Видеоролики, рассказывающие о новаторских историях - от новых технологий до развлечений на свежем воздухе.
 				.about_block_content--text
-					p Through new ways of reaching your audience, and being an integral part of the process all the way from concept to consumer, we help create a different future. We’re a nimble San Francisco Bay Area video production company helping brands and organizations push the world forward.
-					p What’s your way forward?
+					p Благодаря новым способам охвата вашей аудитории, и являясь неотъемлемой частью процесса на всем пути от концепции до потребителя, мы помогаем создать другое будущее. Мы - проворная компания по производству видео в Сан-Франциско, которая помогает брендам и организациям продвигать мир вперед.
+					p Каков твой путь вперед?
 
 
 	.container
@@ -84,32 +84,17 @@ block content
 						img(src='static/images/common/intel.png' alt='')
 				.col-md-12.d-flex.justify-content-center
 					a.btn.btn-accent.scale-effect(href='#')
-						span Get a Free Quote
+						span Получить консультацию
 
 	.services_block.mt80.p50
 		.container
 			.row
 				.col-md-4
-					.services_item
-						.services_item-icon
-							img(src='static/images/content/product_videos-150x150.png' alt='')
-						.services_item-title Product Videos
-						.services_item-text
-							p Tell a story as compelling and world-changing as your product or service.
+					+services_item('static/images/content/product_videos-150x150.png', 'Видео о продуктах', 'Расскажите историю, столь же неотразимую и изменяющую мир, как ваш продукт или услуга.')
 				.col-md-4
-					.services_item
-						.services_item-icon
-							img(src='static/images/content/brand_videos-150x150.png' alt='')
-						.services_item-title Brand Videos
-						.services_item-text
-							p Share your journey with the world through a compelling brand film that captures your unique vision.
+					+services_item('static/images/content/brand_videos-150x150.png', 'Видео бренда', 'Поделитесь своим путешествием со всем миром с помощью захватывающего фирменного фильма, который отражает ваше уникальное видение.')
 				.col-md-4
-					.services_item
-						.services_item-icon
-							img(src='static/images/content/agency_partnerships_video-production-150x150.png' alt='')
-						.services_item-title Agency Partnerships
-						.services_item-text
-							p Wherever your agency is going, bring experienced video partners along with you.
+					+services_item('static/images/content/agency_partnerships_video-production-150x150.png', 'Партнерство', 'Куда бы ни направлялось ваше агентство, берите с собой опытных видео партнеров.')
 
 
 

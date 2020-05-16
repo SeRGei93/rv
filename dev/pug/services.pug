@@ -1,0 +1,78 @@
+extends layout/main
+
+block variables
+    -var title = 'Услуги'
+    -var page_class = 'services'
+
+block content
+    .services_block.mb80
+        .container
+            .row
+                .col-12
+                    h1.big_title.h1 Наши основные услуги
+                .col-md-4
+                    +services_item('static/images/content/product_videos-150x150.png', 'Видео о продуктах', 'Расскажите историю, столь же неотразимую и изменяющую мир, как ваш продукт или услуга.')
+                .col-md-4
+                    +services_item('static/images/content/brand_videos-150x150.png', 'Видео бренда', 'Поделитесь своим путешествием со всем миром с помощью захватывающего фирменного фильма, который отражает ваше уникальное видение.')
+                .col-md-4
+                    +services_item('static/images/content/agency_partnerships_video-production-150x150.png', 'Партнерство', 'Куда бы ни направлялось ваше агентство, берите с собой опытных видео партнеров.')
+
+    .services_block_additional.mb80
+        .container
+            .row
+                .col-12
+                    .big_title Так же мы предлагаем
+                .col-12.services_item_additional.reverse
+                    .row
+                        .col-lg-5.col-md-12
+                            .services_item_additional_content
+                                h3.services_item_additional_content--title Анимационные видео
+                                .services_item_additional_content--descr
+                                    p Анимационные видео - это богатый и интересный способ рассказать свою историю и сделать ваши ключевые моменты интересными. Анимированные видеоролики прорезают цифровой шум и позволяют воплотить в жизнь любую концепцию, даже самые абстрактные. У них также есть возможность упростить то, что можно считать сложной темой или идеей.
+                                    p Типы анимационных видеороликов включают анимацию движения, 2D-анимацию, 3D-анимацию и остановку движения.
+                        .col-lg-7.col-md-12
+                            .services_item_additional_image
+                                +img-lozad('https://cdn2.hubspot.net/hubfs/4835486/ezgif-3-14174ebcb8f2-1.gif')
+                .col-12.services_item_additional
+                    .row
+                        .col-lg-7.col-md-12
+                            .services_item_additional_image
+                                +img-lozad('https://cdn2.hubspot.net/hubfs/4835486/ezgif-3-94204824895d-1.gif')
+                        .col-lg-5.col-md-12
+                            .services_item_additional_content
+                                h3.services_item_additional_content--title Видео о продуктах
+                                .services_item_additional_content--descr
+                                    p Видеоролики о продуктах в 4 раза чаще можно просматривать, чем читать в тексте. Они позволяют вам рассказать о преимуществах и использовании вашего продукта в увлекательной и убедительной форме. Это создает более продолжительное впечатление в сознании зрителей и оставляет возможности продукта, которые будут испытаны, а не объяснены.
+                .col-12.services_item_additional.reverse
+                    .row
+                        .col-lg-5.col-md-12
+                            .services_item_additional_content
+                                h3.services_item_additional_content--title Анимационные видео
+                                .services_item_additional_content--descr
+                                    p Анимационные видео - это богатый и интересный способ рассказать свою историю и сделать ваши ключевые моменты интересными. Анимированные видеоролики прорезают цифровой шум и позволяют воплотить в жизнь любую концепцию, даже самые абстрактные. У них также есть возможность упростить то, что можно считать сложной темой или идеей.
+                                    p Типы анимационных видеороликов включают анимацию движения, 2D-анимацию, 3D-анимацию и остановку движения.
+                        .col-lg-7.col-md-12
+                            .services_item_additional_image
+                                +img-lozad('https://cdn2.hubspot.net/hubfs/4835486/ezgif-3-14174ebcb8f2-1.gif')
+                .col-12.services_item_additional
+                    .row
+                        .col-lg-7.col-md-12
+                            .services_item_additional_image
+                                +img-lozad('https://cdn2.hubspot.net/hubfs/4835486/ezgif-3-94204824895d-1.gif')
+                        .col-lg-5.col-md-12
+                            .services_item_additional_content
+                                h3.services_item_additional_content--title Видео о продуктах
+                                .services_item_additional_content--descr
+                                    p Видеоролики о продуктах в 4 раза чаще можно просматривать, чем читать в тексте. Они позволяют вам рассказать о преимуществах и использовании вашего продукта в увлекательной и убедительной форме. Это создает более продолжительное впечатление в сознании зрителей и оставляет возможности продукта, которые будут испытаны, а не объяснены.
+                .col-md-12.d-flex.justify-content-center
+                    a.btn.btn-accent.scale-effect(href='#')
+                        span Получить консультацию
+
+
+
+
+
+
+
+
+
