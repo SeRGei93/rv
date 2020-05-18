@@ -336,3 +336,79 @@
     }
   }
 }
+.contact-h3{
+  font-size: 32px;
+  margin: 30px 0;
+  font-weight: bold;
+}
+.stage{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed rgba(237,237,237,.5);
+  margin-bottom: 30px;
+  @include screen(767px){
+    border: none;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  @include screen(380px){
+    justify-content: space-around;
+  }
+  &_col{
+    flex-basis: calc(100% / 7);
+    @include screen(767px){
+      flex-basis: calc(100% / 3);
+      &:nth-last-child(-n + 4){
+        flex-basis: calc(100% / 4);
+      }
+    }
+    @include screen(380px){
+      flex-basis: 50%;
+      &:nth-last-child(-n + 4){
+        flex-basis: 50%;
+      }
+    }
+    .stage_item{
+      padding-bottom: 15px;
+      position: relative;
+      @include screen(767px){
+        padding-bottom: 0;
+        margin-bottom: 30px;
+      }
+      &:after{
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: block;
+        background-image: url("/static/images/common/caret-dark.png");
+        position: absolute;
+        bottom: -25px;
+        right: 50%;
+        margin-right: -10px;
+        @include screen(767px){
+          display: none;
+        }
+      }
+      &--icon{
+        font-size: 36px;
+        color: $accent;
+        margin-bottom: 15px;
+        @include screen(380px){
+          margin-bottom: 5px;
+        }
+      }
+      &--title{
+        @include screen(991px){
+          font-size: 12px;
+        }
+        @include screen(380px){
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
